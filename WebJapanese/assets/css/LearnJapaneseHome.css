@@ -1,0 +1,88 @@
+
+/* common */
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* header */
+.header h1 {
+  font-size: 46px;
+  font-weight: 500;
+}
+.header h1 a:hover,:visited,:link,:active{
+  color: #289dcc;
+}
+
+#nav {
+  border-top: 3px solid #289dcc;
+  background: #232323;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+
+.header__menu >  li:not(:first-child){
+  font-size: 14px;
+}
+
+.header__menu > li > a {
+  color: white;
+  font-family: "open sans", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 12px;
+  display: inline-block;
+  transition: all .25s ease;
+}
+
+
+.header__menu > li > a:hover {
+  background: #289dcc;
+  line-height: 30px;
+}
+
+.header__menu > li > a:hover + .header__dropdown {
+  display: block;
+
+}
+
+.header__icon-search {
+  margin-left: auto; 
+  font-size: 21px;
+}
+
+.header__icon-home {
+  background-color: #289dcc;
+  line-height: 30px;
+  font-size: 26px;
+}
+
+.header__dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  background-color: #232323;
+  text-align: left;
+}
+
+.header__dropdown a{
+  color: white;
+  font-size: 14px;
+  text-align: left;
+
+}
+/* main */
+
